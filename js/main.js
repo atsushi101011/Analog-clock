@@ -73,11 +73,9 @@
     }
 
     update(){
-
       this.h = (new Date()).getHours();
       this.m = (new Date()).getMinutes();
       this.s = (new Date()).getSeconds();
-
     }
 
     run() {
