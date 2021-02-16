@@ -10,16 +10,12 @@
 
     draw(angle, func) {
       this.ctx.save();
-
       this.ctx.translate(this.width / 2, this.height / 2);
       this.ctx.rotate(Math.PI / 180 * angle);
-
       this.ctx.beginPath();
       func(this.ctx);
       this.ctx.stroke();
-
       this.ctx.restore();
-
     }
     clear(){
       this.ctx.clearRect(0,0,this.width,this.height);
@@ -30,8 +26,6 @@
     constructor(drawer) {
       this.r = 100;
       this.drawer = drawer;
-
-
     }
 
     drawFace() {
